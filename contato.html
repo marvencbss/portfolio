@@ -6,6 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .social-card {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 15px;
+    }
+
+    .social-card.linkedin { background-color: #0e76a8; } /* LinkedIn azul */
+
+    .social-card:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .contact-text {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
@@ -26,45 +59,40 @@
     </div>
   </nav>
 
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Fale comigo</h2>
-    <form action="mailto:marvencbs12@gmail.com" method="post" enctype="text/plain">
-      <div class="mb-3">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="nome" name="nome">
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Seu E-mail</label>
-        <input type="email" class="form-control" id="email" name="email">
-      </div>
-      <div class="mb-3">
-        <label for="assunto" class="form-label">Assunto</label>
-        <input type="text" class="form-control" id="assunto" name="assunto">
-      </div>
-      <div class="mb-3">
-        <label for="mensagem" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="mensagem" name="mensagem" rows="4"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">
-        <i class="bi bi-send-fill"></i> Enviar
-      </button>
-    </form>
+  <div class="container my-5 text-center">
+    <h2 class="mb-4">Me encontre nas redes</h2>
+
+    <div class="d-flex justify-content-center flex-wrap">
+
+      <a href="https://www.linkedin.com/in/marven-castro/" target="_blank" rel="noopener noreferrer" title="LinkedIn — Marven Castro" class="social-card linkedin">
+        <i class="bi bi-linkedin" aria-hidden="true"></i>
+        <span class="visually-hidden">LinkedIn</span>
+      </a>
+
+      <a href="https://www.instagram.com/okasuturo_?igsh=bWFqYjcwMGZ0ejh3" target="_blank" rel="noopener noreferrer" title="Instagram — Marven Castro" class="social-card instagram">
+        <i class="bi bi-instagram" aria-hidden="true"></i>
+        <span class="visually-hidden">LinkedIn</span>
+      </a>
+
+    </div>
+
+    <div class="contact-text">
+      Ou então me envie um email: <a href="mailto:marvencbs12@gmail.com">marvencbs12@gmail.com</a>
+    </div>
   </div>
 
   <footer class="bg-dark text-light text-center py-4">
     <div class="container">
-      <a href="https://github.com/marvencbss" target="_blank" class="text-light mx-3">
+      <a href="https://github.com/marvencbss" target="_blank" rel="noopener noreferrer" class="text-light mx-3">
         <i class="bi bi-github"></i> GitHub
       </a>
-      <a href="https://www.linkedin.com/in/marven-castro/" target="_blank" class="text-light mx-3">
+      <a href="https://www.linkedin.com/in/marven-castro/" target="_blank" rel="noopener noreferrer" class="text-light mx-3">
         <i class="bi bi-linkedin"></i> LinkedIn
-      </a>
-      <a href="mailto:marvencbs12@gmail.com" class="text-light mx-3">
-        <i class="bi bi-envelope-fill"></i> E-mail
       </a>
       <p class="mt-3 mb-0">&copy; 2025 - Marven Castro</p>
     </div>
   </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
